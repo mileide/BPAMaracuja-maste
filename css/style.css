@@ -1,0 +1,250 @@
+/*para tirar as margens já existentes da tag body, e colocar o fundo do site*/
+body{
+	margin:0 auto;
+	background-color: rgba(240, 230, 140, 1);
+}
+/*importação das fonts*/
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+
+/*---------------------------------------------------------------------CSS do Container---------------------------------------------------------------------*/
+
+
+#container{
+	width:100%;
+	background: rgba(255, 255, 255, 0.4);
+}
+
+
+/*---------------------------------------------------------------------CSS do nav---------------------------------------------------------------------*/
+
+
+#tamanho{
+	width: 100%;
+	height:151px;
+
+}
+#nav{
+	position:fixed;/*nav fixo*/
+	width:100%;
+	z-index: 10;
+}
+#navP{
+	width: 100%;
+	height:125px;
+	background-image: url("../img/header.png");
+	background-size: 100% 100%;		
+}
+#navS{
+	width: 100%;
+	height:26px;
+	background-color: #393939;
+	text-align:center;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); /*sombra do menu*/
+}
+#titulo{
+	
+  	margin: 0 auto;
+	margin-left: 10%;
+	text-shadow: 0px 0px 15px #000000;/*#F4FA5B;*/
+    z-index: 11;
+    color:#F8FF3E;
+    font-family: 'Monoton', cursive;
+    font-size: 40px;
+    
+}
+h1{
+	font-family: 'Sansita', sans-serif;
+	margin:2%;
+	display:inline;
+	font-size:1rem;
+	color:yellow;
+	text-shadow: 0px 0px 10px #000;
+	justify-content: center;
+
+}
+
+a{
+	text-decoration:none;	
+}
+div.achor{
+    display:block;
+    position: relative;
+    top:-160px;
+    visibility:hidden;
+}
+h2{
+	font-family: 'Sansita', sans-serif;
+	margin:2%;
+	display:inline;
+	font-size:1rem;
+	color:yellow;
+	text-shadow: 0px 0px 10px #000;
+	justify-content: center;
+
+
+}
+
+h3{	
+	font-family: 'Sansita', sans-serif;
+	font-size:20px;
+	color:#393939;
+	background:#F7FF4D;
+	padding:5px 0px 5px 20px;
+	margin:0px;
+	text-align: center;
+}	
+}
+
+
+/*---------------------------------------------------------------------CSS do cabeçalho, onde fica o slide de fotos---------------------------------------------------------------------*/
+
+
+#header{
+	width: 100%;
+	height:25%;
+}
+
+
+/*---------------------------------------------------------------------CSS do conteúdo do site---------------------------------------------------------------------*/
+
+
+#section{
+	width: 100%;
+	height:43%;	
+}
+#espaco{
+	width:100%;
+	margin-top:6%;
+	height:0%;
+	background-color:white;
+}
+/*conteúdos de textos*/
+.conteudos{
+	width:70%;
+	margin-right:auto;
+	margin-left:auto;
+	background:rgb(255, 255, 255);
+	border:0.5px #fffff1 solid;
+	margin-bottom:9%;
+	box-shadow: 2px 2px 8px #000;
+}
+.contimg{
+	margin-right:auto;
+	margin-left:auto;
+	width:350px;
+	height:200px;
+	margin-top:1%;
+	margin-bottom:1%;
+	border:3px solid #cccccc;
+}
+.contimg2{
+	margin-right:auto;
+	margin-left:auto;
+	width:600px;
+	height:300px;
+	margin-top:1%;
+	margin-bottom:1%;
+	border:3px solid #cccccc;
+}
+#section p{
+	padding:0px 35px 0px 35px;
+	font-family:verdana;
+	font-size:16px;
+	line-height:1.4;
+	text-align:justify;
+	background-color:rgba(255, 255, 255, 0.1);
+}
+h4{
+	font-size:24px;
+}
+span{
+	padding-left:60px;
+}
+/*produtores*/
+.produtores{
+	width:70%;
+	margin-right:auto;
+	margin-left:auto;
+	background:rgba(255, 255, 255, 0.8);
+	border:0.5px #fffff1 solid;
+	margin-bottom:2%;
+	box-shadow:0px 0px 3px #B9B9B9;
+}
+.produtor{	
+	background-color:rgba(242, 255, 75, 0.5);
+	margin:1.2%;
+	margin-right:auto;
+	margin-left:auto;
+	border:0.5px white outset;
+	border-radius:5px;
+	width:97%;
+	display:block;	
+}
+.foto{
+	border:7px #ffffff solid;
+    border-radius:50%;
+    margin:10px;
+}
+
+.produtor p{
+	font-size:16px;
+}
+.lugarFoto{
+	float:left;
+}
+.lugarTexto{
+	margin-left:5%;
+}
+
+
+/*---------------------------------------------------------------------CSS do footer do site---------------------------------------------------------------------*/
+
+
+#localidade{
+	text-align: center;
+	width:100%;
+	background:rgb(255, 255, 255);
+	margin-bottom:0%;
+	box-shadow:0px 0px 3px #B9B9B9;
+}
+
+#footer{
+	/*border-top:28px inset;*/
+	background-image: url("../img/mosaico.png");
+	background-size: 100% 100%;
+	width:100%;
+	height:30%;
+}
+.rodape{
+	width:49.87%;
+	display:inline-table;
+	line-height:1.6;
+	margin:0px;
+	background-color: rgba(0, 0, 0, 0.9);
+	padding-bottom:2%;
+
+}
+.logo{
+
+	margin:2% 0% 2% 10%;
+    background-color: #FFF;
+    border: 5px solid #FFF;
+    border-radius: 5px;
+	
+
+
+}
+
+.rodape p{
+	font-size:20px;
+	color:#fff;
+	line-height:1.6;
+	text-align:center;
+	padding-bottom:2%;
+	padding-top:2%;
+	margin: 0px;
+}
+
+

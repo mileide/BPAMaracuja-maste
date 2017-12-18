@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="themes/default/default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+		<link rel="shortcut icon" href="img/iconeMaracuja.ico"/>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+		
+		<!-- SLIDER -->
+		<script type="text/javascript"> 
+		$(window).on('load', function() {
+    		$('#slider').nivoSlider(); 
+		}); 
+		</script>
+		<!-- ROLAR PÁGINA -->
+		<script type="text/javascript">
+			$(function(){
+				$("a").click(function (event) {
+					event.preventDefault();
+					var idElemento = $(this).attr("href");
+					var deslocamento = $(idElemento).offset().top;
+					$('html, body').animate({ scrollTop: deslocamento}, 'slow');
+				});
+			});
+		</script>
+		<title>BPA - Maracujá</title>
+	</head>
+<body>
+	<div id="container">
+	<div id="tamanho">
+		<div id="nav">
+			<div id="navP">
+				<a href="index.html"><h1 id="titulo" class="teste">BPA - Produção de Maracujá</h1></a>
+			</div>	
+			<div id="navS">
+				<a href="#QuemSomos"><h2>Quem Somos</h2></a>
+				<a href="#Produto"><h2>O Maracujá</h2></a>
+				<a href="#ComoProduzimos"><h2>Como produzimos</h2></a>
+				<a href="#Curiosidades"><h2>Curiosidade</h2></a>
+				<a href="#Produtores"><h2>Produtores</h2></a>
+				<a href="#Local"><h2>Local</h2></a>
+				<a href="#Contatos"><h2>Contatos</h2></a>
+			</div>
+		</div>
+	</div> 
+		<div id="header">
+			<div class="nivoSlider theme-default">
+				<div id="slider" class="nivoSlider">     
+	    			<img src="img/img01.JPG"  alt=" Flor do maracujá" />    
+	    			<img src="img/img02.JPG"  alt=" Camaleão verde, sobre um galho na plantação de maracujás " />     
+	    			<img src="img/img03.JPG"  alt=" Maracujás " />
+	    			<img src="img/img04.JPG"  alt=" Plantação de maracujás" />
+	    			<img src="img/img05.JPG"  alt=" Plantação de maracujás" />
+	    			<img src="img/img06.JPG"  alt=" Flor do maracujá" />        
+	    		</div> 
+	    	</div>
+		</div>
+		<div id="section">		
+			<div id="espaco"> </div>
+			<div class="achor" id="QuemSomos">QuemSomos</div> 	
+			<div  class="conteudos">					<!--div Quem Somos-->
+				<h3>Quem Somos</h3>					
+				<p>Somos um grupo de agricultores e trabalhamos com Boas Praticas Agrícola (BPA). Nossa primeira plantação de maracujá teve início com Alcindo Genésio há 10 anos, na zona rural do município de Cerro Corá, infelizmente o mesmo faleceu no ano de 2014. Contudo, Roberto Ítalo tomou a frente e deu continuidade ao cultivo. Ele cursa o técnico integrado em alimentos no Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte, campus Currais Novos e foi graças ao incentivo do campus que ele deu início a um projeto de extensão, onde aprendeu a aperfeiçoar, junto com os outros trabalhadores, suas técnicas de produção agroecológicas para o manejo do maracujá.</p>
+				<div class="contimg2">
+					<img src="img/comunidade.jpg"  title="Agricultores" alt="Foto com os trabalhadores" width="600px" height="300px"/>
+				</div>
+ 			</div>
+ 			<div class="achor" id="Produto">Produto</div>
+			<div class="conteudos">						<!--div Produto-->
+				<h3>O Maracujá</h3>
+				<div class="contimg">
+					<img src="img/ummaracuja.jpg"  title="maracujá amarelo" alt="Foto com um maracujá na mão de um dos produtores" width="350px" height="200px"/>
+				</div>
+				<p>O maracujá é rico em potássio, zinco e magnésio, que ajudam na saúde cardiovascular.
+				A vitamina C, também presente, ajuda na imunidade contra infecções e age como um antioxidante.</p>
+				<p>Sua utilização como sedativo é conhecida desde a antiguidade, entretanto essa não é sua única utilização, pois pode ser utilizada como calmante, hipnótico, sonífero e tonificante.</p>
+				<p>Na compra, deve-se dar atenção à casca do maracujá, riquíssima em fibra solúvel e pectina.  A casca evita os picos de insulina, ou seja, ótimo para os diabéticos, ajuda a regular os níveis de colesterol, favorecendo a eliminação de toxinas ajudando na manutenção do peso. Além disso, também possui um ótimo sabor.</p>
+
+			</div>
+			<div class="achor" id="ComoProduzimos">ComoProduzimos</div>
+			<div class="conteudos">						<!--div Como Produzimos-->
+				<h3>Como é produzido o maracujá</h3>
+				<p>O nosso plantio é referência no manejo agroecológico. Todas as práticas e técnicas empregadas no plantio visam não só a qualidade do produto, mas também o bem estar tanto do homem do campo como da natureza.</p>
+				<div class="contimg2">
+					<img src="img/plantio.JPG"  title="Plantação de maracujá" alt="Foto do plantio de maracujás" width="600px" height="300px"/>
+				</div>
+			</div>
+			<div class="achor" id="Curiosidades">Curiosidades</div>		
+			<div  class="conteudos">						<!--div Curiosidades-->
+				<h3>Maracujá do mato</h3>
+				<div class="contimg">
+					<img src="img/maracujadomato.JPG"  title="maracujá do mato" alt="Foto do maracujá da Caatinga, também conhecido como maracujá do mato" width="350px" height="200px"/>
+				</div>
+				<p>O maracujá da Caatinga (nome científico: Passiflora cincinnata), também conhecido como maracujá do mato, é uma fruta nativa do semiárido nordestino. É resistente à seca e também a uma série de pragas que atingem o maracujá comum.</p>
+				<p>Temos um pequeno cultivo desse tipo de maracujá, pois ele é muito útil, logo que a flor do mesmo permanece aberta o dia inteiro, atraindo assim o besouro conhecido como mangangá, responsável pela polinização. Com isso ele mantém-se até mais tarde, o que contribui para polinizar também as flores do maracujá amarelo, que só abrem a partir do meio dia.</p>
+			</div>
+			<div class="achor" id="Produtores">Produtores</div>		
+			<div class="produtores">						<!--div Produtores-->
+				<h3>PRODUTORES</h3>
+				<div class="produtor">
+					<div class="lugarFoto">
+						<img class="foto" src="img/italo.jpg" alt="Foto de um produtor, chamado Roberto Ítalo" height="200px" width="200px">
+					</div>
+					<div class="lugarTexto">
+						<h4>Roberto Ítalo</h4>
+						<p>Roberto Ítalo, 19 anos. Aluno do IFRN, curso técnico integrado em alimentos. Participava de um projeto de extensão no Povoado Cruz, onde produzia tomates. Devido essa experiência junto com o professor San Clair ter surtido bons resultados, surgiu o desejo de levar as Boas Práticas Agrícolas (BPA) para o Povoado Albino, que é a comunidade onde vive, começando assim no projeto do plantio de maracujá, juntamente com seu tio e seu primo. Com a ajuda do professor eles fazem testes nos maracujás que produzem para saber a qualidade do produto e como podem aperfeiçoar suas técnicas agroecologicas.</p>
+					</div>
+				</div>
+				<div class="produtor">
+					<div class="lugarFoto">
+						<img class="foto" src="img/silvan.jpg" alt="Foto de um produtor, chamado Silvan Genésio de Lima " height="200px" width="200px">
+					</div>
+					<div class="lugarTexto">
+						<h4>Silvan Genésio de Lima</h4>
+						<p>Silvan Genésio de Lima, 44 anos. Tem grau de escolaridade até a 6ª série, então desde cedo ele vive da agricultura, de início trabalhava com outros produtos, como: mandioca, aroeira, entre outros. No ano de 2007 junto com Alcino Genésio (in memoriam) eles conheceram a cultura do maracujá, desde então trabalha com o mesmo, tendo em vista que o maracujá é uma fruta que produz o ano inteiro. Ele é o encarregado pela aplicação das técnicas, como a adubação das plantas.</p>
+					</div>
+				</div>
+				<div class="produtor">
+					<div class="lugarFoto">
+						<img class="foto" src="img/junior.jpg" alt="Foto de um produtor, chamado Silvan Genésio de Lima Júnior " height="200px" width="200px">
+					</div>
+					<div class="lugarTexto">
+						<h4>Silvan Genésio de Lima Júnior</h4>
+						<p>Silvan Genésio de Lima Júnior, 21 anos. Possui o ensino médio completo, porém na região em que mora é muito difícil conseguir emprego, por isso no ano de 2013 ele começou a trabalhar com a plantação de maracujá.  Ajuda o pai desde a infância, no entanto após o término do ensino médio essa ajuda foi intensificada, passando assim a estar completamente dentro do projeto, hoje já possui um plantio próprio. Ele é o encarregado pela parte mais braçal do projeto, como o plantio dos pés de maracujá.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Local" class="achor">Local</div>
+		<div id="localidade">
+			<h3>LOCAL</h3>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3427.113681896591!2d-36.42669218523171!3d-6.080181595597053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDQnNDguNyJTIDM2wrAyNScyOC4yIlc!5e1!3m2!1spt-BR!2sbr!4v1513020695455" width="800" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
+			
+		</div>
+		<div id="Contatos" class="achor">Contatos</div>
+		<div id="footer">
+			<div class="rodape">
+				<h3>CONTATOS</h3>
+				<p>Email: roberto.ifrn@outlook.com</p>
+				<p>Telefone: (84) 99212-0431</p>
+				<br><br><br>
+			</div>
+			<div class="rodape">
+				<h3>APOIO</h3>
+				<img class="logo" src="img/logoIFRN.png" alt="Logomarca do Instituto Federal de Ciência, tecnologia e educação do Rio Grande do Norte " />
+				<br><br><br><br>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
+
